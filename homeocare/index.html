@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            	body{
+		    padding: 0;
+			margin: 0;
+			background:white;
+			font-family: 'josefin sans', sans-serif;
+			box-sizing: border-box;
+			
+		}
+		.Address{
+      	font-size: 13px;
+      	float: right;
+        position: absolute;
+      	top:25px;
+      	margin-left: 1200px;
+      	color: white;
+      	font-size: bold;
+      	text-align: center;
+
+      	
+      }
+       
+		
+		header{
+            color: black;
+            padding: 10px;
+            text-align: left;
+			width: 100%;
+			background:yellow;
+			height: 40px;
+            background-color:Indigo;
+           font-size: 15px;
+           line-height: normal(default);
+      }
+     .p1{
+		color: white;
+
+	 }
+       
+    
+		.nav{
+			width: 100%;
+            background:white;
+            height: 80px;
+            display: flex;
+               
+
+			
+			}
+			
+		nav a.active{
+			color:white;
+		}
+		ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			position: absolute;
+		}
+		
+		ul li{
+			float: left;
+			margin-top: 20px;
+			position: relative;
+		}
+		.logo img {
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 10px;
+            text-align: center;
+       }
+		ul li a{
+			width: 150px;
+			color: black;
+			display:block;
+			text-decoration: none;
+			font-size: 18
+			px;
+		    text-align: center;
+		    padding: 10px;
+		    border-radius: 10px;
+		    font-family: Centure Gothic;
+		    font-weight: bold;
+			
+		}
+		a:hover{
+			background: #669900;
+		}
+		ul li ul{
+			background: white;
+		}
+		ul li ul a{
+			font-size: 15px;
+		}
+		ul li ul li {
+			float: none;
+		}
+		ul li ul{
+			display: none;
+		}
+		ul li:hover ul{
+			display: block;
+		}
+		
+		
+		.images4{
+			text-align: center;
+		}
+		.fa{
+			padding: 6px;
+			font-size: 20px;
+			width: 50px;
+			text-align: center;
+			text-decoration: none;
+			margin: 5px 2px;
+		}
+		.fa:hover{
+			opacity: 0.7;
+
+		}
+		.fa-facebook{
+			background: #3B5998;
+			color: white;
+		}
+		.fa-twitter{
+			background-color: #55AEEE;
+			color: white;
+		}
+		.fa-linkedin{
+			background: #007bb5;
+			color: white;
+
+		}
+		.fa-instagram{
+			background: #125688;
+			color: white;
+		}
+		.fa-youtube{
+			background: #bb0000;
+			color: white;
+		}
+        .home{
+            background-color: antiquewhite;
+            margin-bottom: 100px;
+			width: 100%;
+			padding: 78px 0px;
+			background-color: #C0C0C0	;
+        }
+        .Heading{
+            position: relative;
+            display: inline;
+			font-family:'Courier New', Courier, monospace;
+        }
+        .Heading::after{
+            content: '';
+            width: 5px;
+            height: 70px;
+            display: block;
+            background-color: blueviolet;
+            position: absolute;
+            left: -210px;
+            top: 5px;
+            
+        }
+		.button{
+			background-color: blueviolet;
+		    border-radius: 30px;
+			color: white;
+			padding: 20px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border: white;
+			transition: all 0.5s;
+			
+		}
+		.button span {
+			cursor: pointer;
+			display: inline-block;
+			position: relative;
+			transition: 0.5s;
+		}
+		.button span:after {
+			content: '\00bb';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			right: -20px;
+			transition: 0.5s;
+		}
+		.button:hover span {
+			padding-right: 25px;
+		}
+		.button:hover span:after {
+			opacity: 1;
+			right: 0;
+		}
+		.IT-Networking{
+			width: 100%;
+			padding: 78px 0px;
+			background-color: #C0C0C0	;
+		}
+		.IT-Networking img{
+			height: auto;
+			width: 500px;
+			border-radius: 25px;
+		}
+		.IT-Networking-text{
+			width:550px;
+		}
+		.main{
+			width: 1130;
+			max-width: 95%;
+			margin: 0 auto;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			height: 100%;
+		}
+
+		
+		
+		span{
+			color:#f5f5dc;
+		}
+		.IT-Networking-text1{
+			color: block;
+			letter-spacing: 1px;
+			line-height: 28px;
+			font-size: 18px;
+		}
+		.IT-Networking1{
+			width: 100%;
+			padding: 78px 0px;
+			background-color: #f5f5dc;
+		}
+		.IT-Networking1 img{
+			height: auto;
+			width: 500px;
+			border-radius: 25px;
+		}
+		.IT-Networking-text1{
+			width:550px;
+		}
+		.main1{
+			width: 1130;
+			max-width: 95%;
+			margin: 0 auto;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			height: 100%;
+		}
+
+		
+		
+		span{
+			color:#E9967A;
+		}
+		.IT-Networking-text1{
+			color: block;
+			letter-spacing: 1px;
+			line-height: 28px;
+			font-size: 20px;
+		}
+	
+    footer{
+        background: #343434;
+        padding-top: 50px;
+    }
+    .container{
+        width: 1140px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+		color: white;
+    }
+    .footer-content{
+        width: 33.3%;
+    }
+    h3{
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .footer-content p{
+        width:190px;
+        margin: auto;
+        padding: 7px;
+    }
+    .footer-content ul{
+        text-align: center;
+    }
+    .list{
+        padding: 0;
+		margin-left: 170px;
+		margin-bottom: 350px;
+    }
+    .list li{
+        width: auto;
+        text-align: center;
+        list-style-type:none;
+        padding: 7px;
+        position: relative;
+    }
+    .list li::before{
+        content: '';
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background: #f18930;
+        transition-duration: .5s;
+    }
+    .list li:hover::before{
+        width: 70px;
+    }
+    .social-icons{
+        text-align: center;
+        padding: 0;
+    }
+    .social-icons li{
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+    }
+    .social-icons i{
+        color: white;
+        font-size: 25px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: white;
+    }
+    .social-icons i:hover{
+        color: #f18930;
+    }
+    .bottom-bar{
+        background:blueviolet;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+    .bottom-bar p{
+        color:white;
+        margin: 0;
+        font-size: 16px;
+        padding: 7px;
+    }
+		
+		
+		
+</style>
+
+    </head>
+    <header>
+        <p class="p1"><span style="display: inline-block; vertical-align: middle; top: 10px;"><img src=img/images19.jpeg width="30" height="30" style="margin-right: 10px; margin-left: 150px; line-height: 80%;  top: 15px;"></span><span style="cursor:pointer " ><strong> Contact Us (+91) 040-35112011 </strong></span> <div class="Address";><strong>LOCATION : Ameerpet, Hyderabad</strong></p></div>
+    </header>
+    <body>
+		<div id="home">
+        <div class="nav" >
+
+		
+            <ul>
+                <li><img src=img/img1.svg  width="30" height="30"><strong><span style="font-size: 20px; font-family:Helvetica, ; color: black;">Homeocare</span></strong></li>
+        
+        
+                <li> <a href="#home">Home</a></li>
+                
+                <li><a href=aboutus.html
+					>About Us</a></li>
+                    
+              
+                    
+                <li><a href=contactus.html>Contact Us</a></li>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <div class="images4">
+                
+            
+              <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </ul>
+    </div>
+	<img src=img/homoopathie-4689896_1280.jpg height="50%"  width="100%">
+    <div class="home">
+        <center>
+            <img src=img/img1.svg width="50" height="50">
+            <h4>Homeo<br>care</h4>
+            <div class="Heading">
+                <h1 style="font-size: 70px;">
+                    HomeoCare
+                </h1>
+				<p>We consult remotely or in person, for human patients, and remotely or<br> via phone call for animals. Please click on the “Book an Appointment” <br>button below to proceed.</p>
+            </div>
+			<button class="button" style="vertical-align:middle" ><span>Book On Appointment - Dr.Ashima nath</span></button><br>
+			<button class="button" style="vertical-align:middle"><span>Book On Appointment - Dr.Ashima nath</span></button>
+
+        </center>
+    </div>
+	<center>
+		<h1 style="color: black; font-size: 50px; font-family: 'Courier New', Courier, monospace;"> Our Specializations </h1>
+	</center>
+	<section class="IT-Networking">
+		<div class="main">
+
+		
+			<img src=img/saint-johns-wort-5938314_1280.jpg>
+			
+			<div class="IT-Networking-text">
+				
+				
+				<h4>Homeopathy for Humans</h4>
+				<p >Homeopathy is suitable for all ages and safe during pregnancy,<br> old age, and, infancy. It can also be taken alongside conventional<br> treatment or can be used as an alternative. Homeopathy, by<br> virtue of its principles and holistic approach, can be used to treat<br> anything – even before the illness is named or ‘diagnosed’.
+	              
+
+
+
+	                
+					</p>
+					<button class="button">Learn More</button> 
+
+		</div>
+	</div>
+</section>
+<!--animation-->
+<script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.js"></script>
+
+<script>
+  ScrollReveal().reveal('.IT-Networking-text', { 
+	duration: 2000, 
+	origin: 'right', 
+	distance: '100px' 
+});
+
+ScrollReveal().reveal('.main img', { 
+	duration: 1000, 
+	origin: 'left', 
+	distance: '100px' 
+});
+</script>
+
+<section class="IT-Networking1">
+	<div class="main1">
+    <div class="main 1">
+     
+		
+
+            <div class="iI-Networking-text1">
+				<h4 style="color: black;">Homeopathy for Animals</h4>
+                <p style="color:black;">
+					Animals respond very well to homeopathy, in fact. After all, they<br> live in the same environment as we do, and are affected by<br> similar physical and emotional factors. They also have similar<br> body functions and health issues as us such as renal failure, skin<br> issues, heart enlargement, prostate enlargement, digestive<br> problems.
+                    
+                    
+                </p>
+				<button class="button">Learn More</button> 
+
+                
+
+	        </div>
+	        <img src=img/bath-oil-2510793_1280.jpg>
+   </div>
+   </div>
+
+</section>
+<!--animation-->
+<script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.js"></script>
+
+<script>
+  ScrollReveal().reveal('.iI-Networking-text1', { 
+	duration: 2000, 
+	origin: 'left', 
+	distance: '100px' 
+});
+
+ScrollReveal().reveal('.main1 img', { 
+	duration: 1000, 
+	origin: 'left', 
+	distance: '100px' 
+});
+</script>
+</body>
+
+    <!-- Your existing content -->
+	<footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>info@vkinnovations.com</p>
+                <p>Phone:040-35112011</p>
+                <p>Address:2nd Floor, Pavani Prestige (R.S Brothers Building)<br> Opposite to Image Hospital, Ameerpet, Hyderabad,<br> Telangana 500016</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                 <ul class="list">
+					<li>Home</li><br>
+                    <li>About</li><br>
+                    <li>contact</li><br>
+                    
+					
+                 </ul>
+            </div>
+            
+			<div class="images4">
+                
+            <h3>Follow Us</h3>
+				<a href="#" class="fa fa-facebook"></a><br>
+				  <a href="#" class="fa fa-twitter"></a><br>
+				  <a href="#" class="fa fa-linkedin"></a><br>
+				  <a href="#" class="fa fa-instagram"></a><br>
+				  <a href="#" class="fa fa-youtube"></a>
+			  </div>
+			</div>
+        <div class="bottom-bar">
+            <p>&copy; 2023 your company . All rights reserved</p>
+        </div>
+    </footer>
+</div>
+
+   
+
+
+</html> 
