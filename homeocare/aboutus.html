@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+             	body{
+		    padding: 0;
+			margin: 0;
+			background:white;
+			font-family: 'josefin sans', sans-serif;
+			box-sizing: border-box;
+			
+		}
+		.Address{
+      	font-size: 13px;
+      	float: right;
+        position: absolute;
+      	top:25px;
+      	margin-left: 1200px;
+      	color: white;
+      	font-size: bold;
+      	text-align: center;
+
+      	
+      }
+       
+		
+		header{
+            color: black;
+            padding: 8px;
+            text-align: left;
+			width: 100%;
+			background:yellow;
+			height: 40px;
+            background-color:Indigo;
+           font-size: 15px;
+           line-height: normal(default);
+      }
+      
+      
+       
+    
+		.nav{
+			width: 100%;
+            background:white;
+            height: 80px;
+            display: flex;
+               
+
+			
+			}
+			
+		nav a.active{
+			color: #ff0000;
+		}
+		ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			position: absolute;
+		}
+		
+		ul li{
+			float: left;
+			margin-top: 20px;
+			position: relative;
+		}
+		.logo img {
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 10px;
+            text-align: center;
+       }
+		ul li a{
+			width: 150px;
+			color: black;
+			display:block;
+			text-decoration: none;
+			font-size: 18
+			px;
+		    text-align: center;
+		    padding: 10px;
+		    border-radius: 10px;
+		    font-family: Centure Gothic;
+		    font-weight: bold;
+			
+		}
+		a:hover{
+			background: #669900;
+		}
+		ul li ul{
+			background: white;
+		}
+		ul li ul a{
+			font-size: 15px;
+		}
+		ul li ul li {
+			float: none;
+		}
+		ul li ul{
+			display: none;
+		}
+		ul li:hover ul{
+			display: block;
+		}
+		
+		
+		.images4{
+			text-align: center;
+		}
+		.fa{
+			padding: 6px;
+			font-size: 20px;
+			width: 50px;
+			text-align: center;
+			text-decoration: none;
+			margin: 5px 2px;
+		}
+		.fa:hover{
+			opacity: 0.7;
+
+		}
+		.fa-facebook{
+			background: #3B5998;
+			color: white;
+		}
+		.fa-twitter{
+			background-color: #55AEEE;
+			color: white;
+		}
+		.fa-linkedin{
+			background: #007bb5;
+			color: white;
+
+		}
+		.fa-instagram{
+			background: #125688;
+			color: white;
+		}
+		.fa-youtube{
+			background: #bb0000;
+			color: white;
+		}
+        .container1{
+            background-color: bisque;
+        }
+        * {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+        *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: white;
+    }
+        footer{
+        background: #343434;
+        padding-top: 50px;
+    }
+    .container{
+        width: 1140px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-content{
+        width: 33.3%;
+    }
+    h3{
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .footer-content p{
+        width:190px;
+        margin: auto;
+        padding: 7px;
+    }
+    .footer-content ul{
+        text-align: center;
+    }
+    .list{
+        padding: 0;
+		margin-left: 170px;
+		margin-bottom: 350px;
+    }
+    .list li{
+        width: auto;
+        text-align: center;
+        list-style-type:none;
+        padding: 7px;
+        position: relative;
+    }
+    .list li::before{
+        content: '';
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background: #f18930;
+        transition-duration: .5s;
+    }
+    .list li:hover::before{
+        width: 70px;
+    }
+    .social-icons{
+        text-align: center;
+        padding: 0;
+    }
+    .social-icons li{
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+    }
+    .social-icons i{
+        color: white;
+        font-size: 25px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: white;
+    }
+    .social-icons i:hover{
+        color: #f18930;
+    }
+    .bottom-bar{
+        background:blueviolet;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+    .bottom-bar p{
+        color:white;
+        margin: 0;
+        font-size: 16px;
+        padding: 7px;
+    }
+        </style>
+
+    </head>
+    <header>
+        <p style="color:white;"><span style="display: inline-block; vertical-align: middle; top: 10px;"><img src=img/images19.jpeg width="30" height="30" style="margin-right: 10px; margin-left: 150px; line-height: 80%;  top: 15px;"></span><span style="cursor:pointer " ><strong> Contact Us (+91) 040-35112011 </strong></span> <div class="Address";><strong>LOCATION : Ameerpet, Hyderabad</strong></p></div>
+
+
+    </header>
+    <body>
+        <div id="home">
+            <div class="nav" >
+    
+            
+                <ul>
+                    <li><img src=img/MeeraLogo_page-0001.jpg  width="30" height="30"><strong><span style="font-size: 20px; font-family:Helvetica, ; color: black;">Homeocare</span></strong></li>
+            
+            
+                    <li> <a href=index.html>Home</a></li>
+                    
+                    <li><a href=aboutus.html>About Us</a></li>
+                        
+                  
+            
+                        
+                    <li><a href=contactus.html>Contact Us</a></li>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <div class="images4">
+                    
+                
+                  <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </ul>
+        </div>
+        <img src=img/flowers-5348409_1280.jpg width="100%" height="30%">
+        <div class="container1">
+        <center>
+            <h1 style="color: blueviolet; font-size: 80px;">
+                Homeopathy is a<br>safe, gentle, and<br> effective form of<br> treatment.
+            </h1>
+        </center>
+
+        </div>
+        <div style="margin-right: 50px;">
+        <h1 style="color: blueviolet; font-size: 60px;">
+            Why choose<br> Homeopathy
+        </h1>
+        <p style="font-family: 'Courier New', Courier, monospace; color:dimgray;">Homeopathy is suitable for all ages and safe during pregnancy, old age, and, infancy. It<br> can also be taken alongside conventional treatment or can be used as an alternative.<br> Homeopathy, by virtue of its principles and holistic approach, can be used to<br> treat anything – even before the illness is named or ‘diagnosed’.</p>
+        </div>
+        <center>
+
+        <h1 style="color:blueviolet; font-size: 35px; font-family: 'Courier New', Courier, monospace;">We treat the following conditions, and many more</h1>
+        </center>
+
+        <div class="row">
+          <div class="column" style="background-color:#aaa; ">
+            <center>
+            <h1 style="color: blueviolet;">For Men</h1>
+            <p>Prostate enlargement<br>
+
+                Sexual health issues including impotence<br>
+                
+                Male infertility including low sperm count<br>
+                
+                Hormonal issues<br>
+                
+                Acne<br>
+                
+                Varicocele</p>
+                </center>
+          </div>
+          <div class="column" style="background-color:#bbb;">
+            <center>
+            <h1 style="color: blueviolet;">For Women</h1>
+            <p>Menstrual issues including painful periods, severe PMS<br>
+
+                Irregular menstrual cycles<br>
+                
+                Acne<br>
+                
+                PCOS, cysts, and fibroids<br>
+                
+                Infertility and repeated miscarriages<br>
+                
+                Pregnancy-related Issues<br>
+                
+                Menopausal problems<br>
+                
+                Post-partum issues including depression & lactation related problems<br>
+                
+                Recurrent Urinary Tract Infection (UTI) and bladder infections<br>
+                
+                Cancer</p>
+                </center>
+          </div>
+          <div class="column" style="background-color:#ccc;">
+            <center>
+            <h1 style="color: blueviolet;">For Children</h1>
+            <p>Low immunity resulting in frequent illnesses<br>
+
+                Allergies<br>
+                
+                Skin issues<br>
+                
+                Bed-wetting<br>
+                
+                Attention Deficit Hyperactivity Disorder (ADHD), autism & other behavioral Issues<br>
+                
+                Digestion problems, chronic constipation or frequent diarrhea, Irritable Bowel Syndrome (IBS)<br>
+                
+                Recurrent respiratory infections – cold, cough, tonsillitis<br>
+                
+                Growth disorders included stunted height</p>
+                </center>
+          </div>
+        </div>
+
+    </body>
+      <!-- Your existing content -->
+	<footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>info@vkinnovations.com</p>
+                <p>Phone:+91 - 40 - 23405286</p>
+                <p>Address:6-3-788/A/7,Opposite Chandana Brothers,Ameerpet,Hyderabad - 500 016</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                 <ul class="list">
+					<li>Home</li><br>
+                    <li>About</li><br>
+                    <li>contact</li><br>
+                    
+					
+                 </ul>
+            </div>
+            
+			<div class="images4">
+                
+            <h3>Follow Us</h3>
+				<a href="#" class="fa fa-facebook"></a><br>
+				  <a href="#" class="fa fa-twitter"></a><br>
+				  <a href="#" class="fa fa-linkedin"></a><br>
+				  <a href="#" class="fa fa-instagram"></a><br>
+				  <a href="#" class="fa fa-youtube"></a>
+			  </div>
+			</div>
+        <div class="bottom-bar">
+            <p>&copy; 2023 your company . All rights reserved</p>
+        </div>
+
+       
+    </footer>
+</html>

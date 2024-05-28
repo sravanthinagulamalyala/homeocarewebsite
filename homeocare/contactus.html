@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style>
+                :root{
+    --primary:#0077b6;
+    --secondary:#48cae4;
+    --black:#333;
+    --white:#fff;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,0.1);
+}
+                    body{
+                padding: 0;
+                margin: 0;
+                background:white;
+                font-family: 'josefin sans', sans-serif;
+                box-sizing: border-box;
+                
+            }
+            .Address{
+              font-size: 13px;
+              float: right;
+            position: absolute;
+              top:25px;
+              margin-left: 1200px;
+              color: white;
+              font-size: bold;
+              text-align: center;
+    
+              
+          }
+           
+            
+            header{
+                color: black;
+                padding: 10px;
+                text-align: left;
+                width: 100%;
+                background:yellow;
+                height: 40px;
+                background-color:Indigo;
+               font-size: 15px;
+               line-height: normal(default);
+          }
+          
+          
+           
+        
+            .nav{
+                width: 100%;
+                background:white;
+                height: 80px;
+                display: flex;
+                   
+    
+                
+                }
+                
+            nav a.active{
+                color: #ff0000;
+            }
+            ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+            }
+            
+            ul li{
+                float: left;
+                margin-top: 20px;
+                position: relative;
+            }
+            .logo img {
+                position: absolute;
+                margin-top: 10px;
+                margin-left: 10px;
+                text-align: center;
+           }
+            ul li a{
+                width: 150px;
+                color: black;
+                display:block;
+                text-decoration: none;
+                font-size: 18
+                px;
+                text-align: center;
+                padding: 10px;
+                border-radius: 10px;
+                font-family: Centure Gothic;
+                font-weight: bold;
+                
+            }
+            a:hover{
+                background: #669900;
+            }
+            ul li ul{
+                background: white;
+            }
+            ul li ul a{
+                font-size: 15px;
+            }
+            ul li ul li {
+                float: none;
+            }
+            ul li ul{
+                display: none;
+            }
+            ul li:hover ul{
+                display: block;
+            }
+            
+            
+            .images4{
+                text-align: center;
+            }
+            .fa{
+                padding: 6px;
+                font-size: 20px;
+                width: 50px;
+                text-align: center;
+                text-decoration: none;
+                margin: 5px 2px;
+            }
+            .fa:hover{
+                opacity: 0.7;
+    
+            }
+            .fa-facebook{
+                background: #3B5998;
+                color: white;
+            }
+            .fa-twitter{
+                background-color: #55AEEE;
+                color: white;
+            }
+            .fa-linkedin{
+                background: #007bb5;
+                color: white;
+    
+            }
+            .fa-instagram{
+                background: #125688;
+                color: white;
+            }
+            .fa-youtube{
+                background: #bb0000;
+                color: white;
+            }
+            img{
+		  background: image;
+		 }
+
+		.container{
+			position:static;
+			font-family: arial;
+
+		}
+		.text-block{
+			position: absolute;
+		  bottom: 20px;
+			right: 20px;
+			background-color:Neutral Gray;
+			color: white;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+        
+/* Fading animation */
+   .fade {
+     animation-name: fade;
+     animation-duration: 1.5s;
+}
+
+   @keyframes fade {
+	 from {opacity: .4} 
+   to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+   @media only screen and (max-width: 300px) {
+   .text {font-size: 11px}
+}
+        .img1:hover {
+          animation: shake 0.5s;
+          animation-iteration-count: infinite;
+}
+
+        @keyframes shake {
+           0% { transform: translate(1px, 1px) rotate(0deg); }
+           10% { transform: translate(-1px, -2px) rotate(-1deg); }
+           20% { transform: translate(-3px, 0px) rotate(1deg); }
+           30% { transform: translate(3px, 2px) rotate(0deg); }
+           40% { transform: translate(1px, -1px) rotate(1deg); }
+           50% { transform: translate(-1px, 2px) rotate(-1deg); }
+           60% { transform: translate(-3px, 1px) rotate(0deg); }
+           70% { transform: translate(3px, 1px) rotate(-1deg); }
+           80% { transform: translate(-1px, -1px) rotate(1deg); }
+           90% { transform: translate(1px, 2px) rotate(0deg); }
+           100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+  }
+ 
+    Services{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    padding-top: 15px;
+    background-color: white;
+}
+.Services1, .Services2, .Services3{
+    width: 100%;
+    height: 260px;
+    text-align: center;
+    background-color:  white;
+    display: flex;
+}
+.Services11, .Services12, .Services13{
+    flex: 1;
+    width: 25%;
+    height: 400px;
+    padding-top: 90px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.Services11 p, .Services12 p, .Services13 p {
+    color: black;
+}
+.Services11 img, .Services12 img, .Services13 img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-image: 5px;
+    border-right-style: inherit;
+}
+
+/* conatct form*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.contact{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background:white;
+  block-size: cover;
+
+}
+.contact .content{
+  max-width: 800px;
+  text-align: center;
+
+}
+.contact .content h2{
+  font-size: 36px;
+  font-weight: 500;
+  color:#0077b6 ;
+  float: right;
+  font-family: sans-serif;
+}
+.contact .content p{
+  
+  font-weight: 300;
+  color: violet;
+}
+.container1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container1 .contactInfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container1 .contactInfo .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.container1 .contactInfo .box .icon{
+  max-width: 60px;
+  height: 60px;
+  background:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+  
+}
+.container1 .contactInfo .box .text1{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: black;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.container1 .contactInfo .box .text1 h2{
+  font-weight: 500;
+  color: var(--primary);
+}
+.contactForm{
+  width: 40%;
+  padding: 40px;
+  background:var(--primary);
+  border-radius: 25px;
+  
+
+}
+.contactForm h2{
+  font-size: 30px;
+  color:white;
+  font-weight: 500;
+
+}
+.contactForm .inputBox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox  textarea
+{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contactForm .inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+
+.contactForm .inputBox input[type="submit"]
+{
+  width: 100px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+@media(max-width:991px)
+{
+  .contact 
+  {
+    padding: 50px;
+  }
+  .container1 
+  {
+    flex-direction: column;
+  }
+  .container1 .contactInfo{
+    margin-bottom: 40px;
+  }
+  .container1 .contactInfo,
+  .contactForm {
+    width: 100%;
+  }
+  
+
+  
+}
+
+
+
+    footer{
+        background: #343434;
+        padding-top: 50px;
+    }
+    .container11{
+        width: 1140px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+    .footer-content{
+        width: 33.3%;
+    }
+    h3{
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .footer-content p{
+        width:190px;
+        margin: auto;
+        padding: 7px;
+        color: white;
+    }
+    .footer-content ul{
+        text-align: center;
+    }
+    .list{
+        padding: 0;
+		margin-left: 170px;
+		margin-bottom: 350px;
+    }
+    .list li{
+        width: auto;
+        text-align: center;
+        list-style-type:none;
+        padding: 7px;
+        position: relative;
+    }
+    .list li::before{
+        content: '';
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background: #f18930;
+        transition-duration: .5s;
+    }
+    .list li:hover::before{
+        width: 70px;
+    }
+    .social-icons{
+        text-align: center;
+        padding: 0;
+    }
+    .social-icons li{
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+    }
+    .social-icons i{
+        color: white;
+        font-size: 25px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: white;
+    }
+    .social-icons i:hover{
+        color: #f18930;
+    }
+    .bottom-bar{
+        background:blueviolet;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+    .bottom-bar p{
+        color:white;
+        margin: 0;
+        font-size: 16px;
+        padding: 7px;
+    }
+    </style>
+
+    </head>
+   
+    <body>
+      <header>
+        <p style="color:white;"><span style="display: inline-block; vertical-align: middle; top: 10px;"><img src=img/images19.jpeg width="30" height="30" style="margin-right: 10px; margin-left: 150px; line-height: 80%;  top: 15px;"></span><span style="cursor:pointer " ><strong> Contact Us (+91) 040-35112011 </strong></span> <div class="Address";><strong>LOCATION : Ameerpet, Hyderabad</strong></p></div>
+
+    </header> 
+        <div id="home">
+        <div class="nav" >
+
+		
+            <ul>
+                <li><img src=img/img1.svg width="30" height="30"><strong><span style="font-size: 20px; font-family:Helvetica, ; color: black;">Homeocare</span></strong></li>
+        
+        
+                <li> <a href=index.html>Home</a></li>
+                
+                <li><a href=aboutus.html
+					>About Us</a></li>
+                    
+              
+                    
+                <li><a href=contactus.html>Contact Us</a></li>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <div class="images4">
+                
+            
+              <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </ul>
+    </div>
+
+    <div class="container">
+        <img src=img/1.webp width="100%" height="50%">
+        <div class="text-block">
+           <h1 style="color:white;"><strong> <u>Contact Us</u></strong></h1>
+           <h5 style="color:white; font-size: bold;">Homeopathy is a safe, gentle, and effective form of treatment.
+      </h5><br>
+            
+           
+        </div>
+           
+      </div><br><br>
+
+      <div class="Services1">
+        <div Class="Services11">
+         <div class="img1">   <img src=img/images31.png></div>
+            <h2 style="color:indigo;">Get in touch</h2>
+                <P style="color:DarkSlateBlue">2nd Floor, Pavani Prestige <br>(R.S Brothers Building) Opposite to<br> Image Hospital, Ameerpet,<br>Hyderabad, Telangana 500016</P>
+        </div>
+        <div class="Services12">
+          <div class="img1">  <img src= img/images32.jpeg alt="100% Satisfaction Guarantee"></div>
+            <h2 style="color:indigo;">Find your local</h2>
+            <p style="color:DarkSlateBlue">Homeocare, Hyderabad...</p>
+        </div>
+        <div class="Services13">
+           <div class="img1"> <img src=img/images34.jpeg alt="Experienced"></div>
+            <h2 style="color:indigo;">Have questions?</h2>
+            <p style="color:DarkSlateBlue"> Please feel free to ask if you have any further questions.
+
+.</p>
+        </div>
+    </div>
+
+    <!-- contact us-->
+    
+          
+
+    <center>
+        <section class="contact" id="Contact">
+          
+          <div class="content" style="margin-right: 60%;">
+          <h2 style="float: inline-start;"><b>Contact Info</b></h2>
+        </div>
+        
+        <div class="container1">
+          <div class="contactInfo" style="margin-left: 10%;">
+            <div class="box">
+              <div class="icon"><i style="font-size:24px" class="fa fa-map-marker" aria-hidden="true"></i></div>
+              <div class="text1">
+                
+                <h2>Address</h2>
+                <p>2nd Floor, Pavani Prestige <br>(R.S Brothers Building) Opposite to<br> Image Hospital, Ameerpet,<br>Hyderabad, Telangana 500016
+                  </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon"><i  style="font-size:24px" class="fa fa-envelope-o" aria-hidden="true"></i></div>
+              <div class="text1">
+                <h2>Email</h2>
+                <p> info@vkinnovations.com </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon"><i style="font-size:24px" class="fa">&#xf095;</i></div>
+              <div class="text1">
+                <h2>phone</h2>
+                <p>040-35112011 </p>
+              </div>
+            </div>
+          </div>
+          <div class="contactForm">
+            <form>
+              <h2>Send Message</h2>
+              <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span>Full name</span>
+              </div>
+              <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span>Email</span>
+              </div>
+              <div class="inputBox">
+                <textarea required="required"></textarea>
+                <span>Type your Message</span>
+              </div>
+              <div class="inputBox">
+                <input type="submit" name="" value="Send">
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </section>
+      </center>
+
+
+
+       <!-- Your existing content -->
+	<footer>
+        <div class="container11">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>info@vkinnovations.com</p>
+                <p>Phone:040-35112011</p>
+                <p>Address:2nd Floor, Pavani Prestige (R.S Brothers Building)<br> Opposite to Image Hospital, Ameerpet, Hyderabad,<br> Telangana 500016</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                 <ul class="list">
+					<li>Home</li><br>
+                    <li>About</li><br>
+                    <li>contact</li><br>
+                    
+					
+                 </ul>
+            </div>
+            
+			<div class="images4">
+                
+            <h3>Follow Us</h3>
+				<a href="#" class="fa fa-facebook"></a><br>
+				  <a href="#" class="fa fa-twitter"></a><br>
+				  <a href="#" class="fa fa-linkedin"></a><br>
+				  <a href="#" class="fa fa-instagram"></a><br>
+				  <a href="#" class="fa fa-youtube"></a>
+			  </div>
+			</div>
+        <div class="bottom-bar">
+            <p>&copy; 2023 your company . All rights reserved</p>
+        </div>
+    </footer>
+
+    </body>
+    
+</html>
